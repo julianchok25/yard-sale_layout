@@ -11,6 +11,22 @@
     <title>Yard Sale</title>
 </head>
 <body>
-    Start.!!
+    <main class="login">
+        <section class="form-container">
+            <img class="form-container__logo" src="./assets/img/logo_yard_sale.svg" alt="main-logo"/>
+
+            <h1 class="form-container__title">Create a new password</h1>
+            <p class="form-container__subtitle">Enter a new password for your account</p>
+
+            <form class="form" action="">
+                <label for="password" class="form__label">Password</label>
+                <input id="password" type="password" placeholder="*********" class="form__input input-password"/>
+                <label for="re-password" class="form__label">Re-enter password</label>
+                <input id="re-password" type="password" placeholder="*********" class="form__input input-password"/>
+
+                <input type="submit" value="Confirm" class="form__primary-button login-button" />
+            </form>
+        </section>
+    </main>
 </body>
 </html>
