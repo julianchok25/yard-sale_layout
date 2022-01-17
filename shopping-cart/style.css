@@ -1,0 +1,107 @@
+:root {
+    /* Colors */
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --white: #fff;
+    --black: #000;
+    --dark: #232830;
+    /* Font sizes */
+    --sm: 1rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.product-detail {
+    position: absolute;
+    width: 360px;
+    right: 0;
+    padding: 12px;
+}
+.order-content{
+    display: flex;
+    flex-direction: column;
+}
+.title-container {
+    display: flex;
+
+}
+.title-container img {
+    transform: rotate(180deg);
+    margin-right: 14px;
+}
+.title {
+    font-size: var(--lg);
+    font-weight: bold;
+}
+.header-titles {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+    align-items: center;
+    background-color: var(--text-input-field);
+    margin-bottom: 24px;
+    border-radius: 8px;
+    padding: 16px;
+
+}
+.header-titles p:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+}
+.header-titles p span:nth-child(1) {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.header-titles p:nth-child(2) {
+    text-align: end;
+    font-weight: 700;
+}
+.shopping-car {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 16px;
+    margin-bottom: 24px;
+    align-items: center;
+}
+.shopping-car figure img {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.shopping-car p:nth-child(2) {
+    color: var(--very-light-pink);
+}
+.shopping-car p:nth-child(3) {
+    font-weight: bold;
+}
+
+.primary-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    background-color: var(--hospital-green);
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: 700;
+}
+@media (max-width: 640px) {
+    .product-detail {
+        width: 100%;
+    }
+}
